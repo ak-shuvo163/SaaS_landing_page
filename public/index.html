@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 font-sans leading-relaxed">
+     <!-- Navbar -->
+     <nav
+     class="w-full px-4 py-3 flex justify-between items-center shadow-md bg-white/80 dark:bg-gray-700/80 backdrop:blur transition duration-300 fixed top-0 left-0 z-50">
+     <div class="flex items-center gap-2">
+         <img src="src/assets/images/profile-imge.jpg" alt="Logo" class="w-10 h-10 rounded-full border-2 border-pink-500">
+         <span class="font-bold text-xl tracking-tight">CodeCrafter</span>
+     </div>
+     <ul class="hidden md:flex gap-8 font-semibold">
+         <li><a href="index.html" class="nav-link hover:text-pink-500 transition">Home</a></li>
+         <li><a href="about.html" class="nav-link hover:text-pink-500 transition">About</a></li>
+         <li><a href="#services" class="nav-link hover:text-pink-500 transition">Services</a></li>
+         <li><a href="projects.html" class="nav-link hover:text-pink-500 transition">Projects</a></li>
+         <li><a href="contact.html" class="nav-link hover:text-pink-500 transition">Contact</a></li>
+     </ul>
+     <div class="flex items-center gap-4">
+         <button id="theme-toggle" class="text-2xl focus:outline-none" aria-label="Toggle dark mode">
+             <i class="fa-solid fa-moon"></i>
+         </button>
+         <button class="md:hidden text-2xl" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+     </div>
+ </nav>
+     <!-- Mobile Menu -->
+     <div id="mobile-menu"
+         class="fixed top-0 right-[-100%] w-64 h-full bg-white dark:bg-gray-900 shadow-lg flex flex-col items-start gap-6 px-6 py-10 text-lg transition-all duration-300 ease-in-out z-50">
+         <button id="close-menu" class="absolute top-4 right-4 text-2xl">
+             <i class="fa-solid fa-xmark"></i>
+           </button>
+         <a href="#home" class="block hover:text-pink-500 transition">Home</a>
+         <a href="about.html" class="block hover:text-pink-500 transition">About</a>
+         <a href="#services" class="block hover:text-pink-500 transition">Services</a>
+         <a href="projects.html" class="block hover:text-pink-500 transition">Projects</a>
+         <a href="contact.html" class="block hover:text-pink-500 transition">Contact</a>
+     </div>
+
+     <!-- 🚀 Hero Section Start -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Supercharge Your Startup with [Your SaaS Name]</h1>
+        <p class="text-lg md:text-xl mb-6">The simplest way to manage [Problem] in one place.</p>
+        <a href="#pricing" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Get Started for $10</a>
+      </header>
+
+      <!-- 🧩 Problem → Solution Section Start -->
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Facing These Challenges?</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
+        Startups often struggle with scattered tools, manual work, and lack of visibility. That’s where we come in.
+      </p>
+  
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <!-- Problem 1 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">⚠️ Too Many Tools</h3>
+          <p class="text-gray-600 dark:text-gray-300">Using 5+ apps just to manage one workflow? It's wasting your time and energy.</p>
+        </div>
+  
+        <!-- Problem 2 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">⏳ Manual Processes</h3>
+          <p class="text-gray-600 dark:text-gray-300">Still doing things manually that can be automated in seconds?</p>
+        </div>
+  
+        <!-- Problem 3 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">📉 Lack of Insights</h3>
+          <p class="text-gray-600 dark:text-gray-300">You can’t grow what you can’t measure. No analytics, no progress.</p>
+        </div>
+      </div>
+  
+      <!-- ✅ Solution Summary -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-bold mb-4">✅ Our SaaS is the Solution.</h3>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          With [Your SaaS Name], unify your tools, automate the boring stuff, and get crystal clear insights to grow faster.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- 🧩 Problem → Solution Section End -->
+
+  <!-- ⚙️ Features Section Start -->
+<section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Powerful Features to Boost Your Workflow</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
+        Everything you need to simplify, automate, and grow — all in one platform.
+      </p>
+  
+      <div class="grid gap-10 md:grid-cols-3 text-left">
+        
+        <!-- Feature 1 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-blue-600 text-4xl mb-4">
+            🔄
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Automated Workflows</h3>
+          <p class="text-gray-600 dark:text-gray-300">Set it once, and let our system handle the repetitive tasks for you.</p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-green-600 text-4xl mb-4">
+            📊
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Real-Time Analytics</h3>
+          <p class="text-gray-600 dark:text-gray-300">Track performance with crystal-clear dashboards & charts.</p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-purple-600 text-4xl mb-4">
+            🌐
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+          <p class="text-gray-600 dark:text-gray-300">Work together in real-time, share feedback, and move faster.</p>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-red-600 text-4xl mb-4">
+            🔐
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Secure & Private</h3>
+          <p class="text-gray-600 dark:text-gray-300">We use industry-standard encryption to keep your data safe.</p>
+        </div>
+  
+        <!-- Feature 5 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-yellow-600 text-4xl mb-4">
+            ⚡
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
+          <p class="text-gray-600 dark:text-gray-300">Optimized for speed so your team stays in flow — always.</p>
+        </div>
+  
+        <!-- Feature 6 -->
+        <div class="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 shadow hover:shadow-lg transition">
+          <div class="text-indigo-600 text-4xl mb-4">
+            🛠️
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Easy Customization</h3>
+          <p class="text-gray-600 dark:text-gray-300">Tweak everything to match your brand and workflow needs.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- ⚙️ Features Section End -->
+
+  <!-- 💼 Use Case Section Start -->
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Built for Startups Like Yours</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
+        Whether you're building an MVP or scaling your product, [Your SaaS Name] fits perfectly at every stage.
+      </p>
+  
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        
+        <!-- Use Case 1 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🚀 Launching an MVP</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Quickly build, test, and validate your idea with ready-to-go tools that eliminate setup time.
+          </p>
+        </div>
+  
+        <!-- Use Case 2 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">👥 Remote Teams</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Collaborate in real-time, track progress, and stay aligned across time zones.
+          </p>
+        </div>
+  
+        <!-- Use Case 3 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">📈 Growth & Scaling</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Automate processes, gain insights, and grow without needing to hire extra staff.
+          </p>
+        </div>
+  
+      </div>
+  
+      <!-- CTA under Use Case -->
+      <div class="mt-12">
+        <a href="#pricing" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          See Pricing Plans →
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 💼 Use Case Section End -->
+  
+  <!-- 💰 Pricing Section Start -->
+<section id="pricing" class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Simple & Transparent Pricing</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
+        No hidden fees. Pay once. Use forever.
+      </p>
+  
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+  
+        <!-- Basic Plan -->
+        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4">Starter Plan</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">Perfect for solo founders and early-stage startups.</p>
+          <div class="text-4xl font-bold mb-6">$10 <span class="text-base font-medium text-gray-500 dark:text-gray-400">one-time</span></div>
+          <ul class="space-y-4 text-gray-600 dark:text-gray-300 mb-6">
+            <li>✅ 1 Project</li>
+            <li>✅ Basic Analytics</li>
+            <li>✅ Email Support</li>
+            <li>✅ Lifetime Access</li>
+          </ul>
+          <a href="#" class="block text-center bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+            Buy Starter
+          </a>
+        </div>
+  
+        <!-- Premium Plan -->
+        <div class="bg-blue-600 text-white p-8 rounded-xl shadow hover:shadow-lg transition relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-bl">Most Popular</div>
+          <h3 class="text-2xl font-semibold mb-4">Pro Plan</h3>
+          <p class="text-blue-100 mb-6">For growing startups who need power and flexibility.</p>
+          <div class="text-4xl font-bold mb-6">$25 <span class="text-base font-medium text-blue-200">one-time</span></div>
+          <ul class="space-y-4 text-blue-100 mb-6">
+            <li>✅ Unlimited Projects</li>
+            <li>✅ Advanced Analytics & Reports</li>
+            <li>✅ Priority Email Support</li>
+            <li>✅ Lifetime Access + Updates</li>
+          </ul>
+          <a href="#" class="block text-center bg-white text-blue-600 font-semibold py-3 rounded-lg hover:bg-gray-100 transition">
+            Buy Pro
+          </a>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- 💰 Pricing Section End -->
+  
+  <!-- 🧑‍💼 Testimonials Section Start -->
+<section class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">What Our Users Say</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
+        Loved by startup founders, freelancers, and small teams across the world.
+      </p>
+  
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+  
+        <!-- Testimonial 1 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-600 dark:text-gray-300 mb-4">“This tool helped us launch our MVP 3x faster. The UI is simple, clean, and efficient.”</p>
+          <div class="flex items-center space-x-4">
+            <img src="https://i.pravatar.cc/100?img=1" alt="User 1" class="w-12 h-12 rounded-full">
+            <div>
+              <h4 class="text-sm font-semibold">Alex Carter</h4>
+              <span class="text-xs text-gray-500 dark:text-gray-400">Founder @ LaunchFlow</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-600 dark:text-gray-300 mb-4">“I love the automation features. It saves me hours every week managing my team.”</p>
+          <div class="flex items-center space-x-4">
+            <img src="https://i.pravatar.cc/100?img=2" alt="User 2" class="w-12 h-12 rounded-full">
+            <div>
+              <h4 class="text-sm font-semibold">Sophie Lee</h4>
+              <span class="text-xs text-gray-500 dark:text-gray-400">Ops Manager @ RemoteStack</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-600 dark:text-gray-300 mb-4">“$25 for lifetime access? That’s a steal. We’ve replaced 3 tools with just this one.”</p>
+          <div class="flex items-center space-x-4">
+            <img src="https://i.pravatar.cc/100?img=3" alt="User 3" class="w-12 h-12 rounded-full">
+            <div>
+              <h4 class="text-sm font-semibold">Michael Zhang</h4>
+              <span class="text-xs text-gray-500 dark:text-gray-400">Co-founder @ ScaleHub</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- 🧑‍💼 Testimonials Section End -->
+  
+  <!-- ❓ FAQ Section Start -->
+<section class="py-20 bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+  
+      <div class="space-y-6">
+  
+        <!-- Question 1 -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">💳 Is this a one-time payment or a subscription?</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            It's a one-time payment. Pay once and use the product forever — no monthly fees!
+          </p>
+        </div>
+  
+        <!-- Question 2 -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">🧑 Can I upgrade from the $10 plan to the $25 plan later?</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Yes! You can upgrade at any time by just paying the price difference.
+          </p>
+        </div>
+  
+        <!-- Question 3 -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">🔐 Is my data secure?</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Absolutely. We use end-to-end encryption and follow industry best practices to keep your data safe.
+          </p>
+        </div>
+  
+        <!-- Question 4 -->
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+          <h3 class="text-lg font-semibold mb-2">📞 Do you offer support?</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Yes, we offer email support for all users. Pro users get priority support within 24 hours.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  <!-- ❓ FAQ Section End -->
+  
+  <!-- 🚀 Final CTA Banner Section Start -->
+<section class="py-16 bg-blue-600 text-white dark:bg-blue-700">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Boost Your Startup?</h2>
+      <p class="text-lg mb-6">Start using [Your SaaS Name] today and simplify your workflow with powerful automation.</p>
+      <a href="#pricing" class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+        Get Started for Just $10 →
+      </a>
+    </div>
+  </section>
+  <!-- 🚀 Final CTA Banner Section End -->
+  
+  
+  
+     <footer class="bg-gray-200 dark:bg-gray-800 text-center text-sm text-gray-600 dark:text-gray-400 py-6 mt-12">  
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+            <!-- Brand Info -->
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">SaaSify</h3>
+              <p class="text-sm">Empowering startups with smarter tools, automation, and growth strategies.</p>
+            </div>
+        
+            <!-- Useful Links -->
+            <div>
+              <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+              <ul class="space-y-2">
+                <li><a href="#features" class="hover:underline">Features</a></li>
+                <li><a href="#pricing" class="hover:underline">Pricing</a></li>
+                <li><a href="#faq" class="hover:underline">FAQ</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+              </ul>
+            </div>
+        
+            <!-- Social Media & Contact -->
+            <div>
+              <h4 class="text-lg font-semibold mb-3">Connect</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="hover:underline">Facebook</a></li>
+                <li><a href="#" class="hover:underline">Twitter</a></li>
+                <li><a href="#" class="hover:underline">LinkedIn</a></li>
+                <li><a href="mailto:support@saasify.com" class="hover:underline">support@saasify.com</a></li>
+              </ul>
+            </div>
+        
+          </div>
+        
+        <div class="text-center md:text-left p-6">
+            <p id="live-time" class="mb-2 text-xs text-gray-500 dark:text-gray-400"></p>
+        <p>&copy; <span id="current-year"></span> 2025 SaaSify. All rights reserved.</p>
+        </div>
+      </footer>
+      <script>
+        // Live Time and Year
+function updateFooterTime() {
+    const now = new Date();
+    const options = {
+      weekday: 'short', year: 'numeric', month: 'short',
+      day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+    };
+    document.getElementById('live-time').textContent = now.toLocaleString('en-US', options);
+    document.getElementById('current-year').textContent = now.getFullYear();
+  }
+  
+  // Initial call
+  updateFooterTime();
+  
+  // Update every second
+  setInterval(updateFooterTime, 1000);
+      </script>
+
+
+     <script src="./js/script.js"></script>
+</body>
+</html>

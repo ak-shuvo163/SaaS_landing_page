@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaS landing page</title>
+    <title>YourProductName | Affordable SaaS Solutions for Startups</title>
+    <meta name="description" content="YourProductName provides seamless cloud software to boost your business productivity. Try it free for 14 days." />
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="YourProductName | Affordable SaaS Solutions for Startups" />
+    <meta property="og:description" content="Boost your business productivity with our cloud SaaS platform. Try it free now!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourproductname.com" />
+    <meta property="og:image" content="https://yourproductname.com/og-image.jpg" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YourProductName | Affordable SaaS Solutions for Startups" />
+    <meta name="twitter:description" content="Boost your business productivity with our cloud SaaS platform. Try it free now!" />
+    <meta name="twitter:image" content="https://yourproductname.com/twitter-image.jpg" />
+    
     <link rel="stylesheet" href="./css/output.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -76,16 +91,16 @@
          <button id="theme-toggle" class="text-2xl focus:outline-none" aria-label="Toggle dark mode">
              <i class="fa-solid fa-moon"></i>
          </button>
-         <a href="#pricing" class=" md:inline-block bg-pink-500 font-semibold px-4 py-2 rounded hover:bg-pink-600 transition">
+         <a href="#pricing" class=" md:inline-block bg-pink-600 font-semibold px-4 py-2 rounded hover:bg-pink-700 transition text-white">
             Get Started
           </a>
-         <button class="md:hidden text-2xl" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+         <button class="md:hidden text-2xl" id="mobile-menu-btn" aria-label="open mobile-menu"><i class="fa-solid fa-bars"></i></button>
      </div>
  </nav>
      <!-- Mobile Menu -->
      <div id="mobile-menu"
          class="fixed top-0 right-[-100%] w-64 h-full bg-white dark:bg-gray-900 shadow-lg flex flex-col items-start gap-6 px-6 py-10 text-lg transition-all duration-300 ease-in-out z-50">
-         <button id="close-menu" class="absolute top-4 right-4 text-2xl">
+         <button id="close-menu" class="absolute top-4 right-4 text-2xl" aria-label="close Menu">
              <i class="fa-solid fa-xmark"></i>
            </button>
          <a href="#features" class="block hover:text-pink-500 transition">Features</a>
@@ -376,7 +391,7 @@
 </section>
 <!-- 💰 Pricing Section End -->
   
-  <!-- 🧑‍💼 Testimonials Section Start -->
+<!--testimonials section starts here-->
   <section id="testimonials" class="py-20 bg-gray-50 dark:bg-gray-800">
     <div class="max-w-6xl mx-auto px-4 text-center relative">
   
@@ -399,6 +414,7 @@
       <div id="carousel" class="relative flex justify-center items-center overflow-hidden px-10 md:px-0">
         <div class="carousel-track flex transition-transform duration-700 ease-in-out">
           <!-- Testimonial cards -->
+           
           <div class="testimonial-card flex-shrink-0 mx-2 p-6 rounded-lg shadow bg-white dark:bg-gray-900 cursor-pointer
             opacity-60 scale-90 transform transition-all duration-700 ease-in-out w-64 md:w-80">
             <p class="text-gray-600 dark:text-gray-300 mb-4">
@@ -444,59 +460,6 @@
       </div>
     </div>
   </section>
-  
-  
-  
-  
-  
-<!-- <section id="testimonials" class="py-20 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">What Our Users Say</h2>
-      <p class="text-lg text-gray-600 dark:text-gray-300 mb-12">
-        Loved by startup founders, freelancers, and small teams across the world.
-      </p>
-  
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-  
-        
-        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <p class="text-gray-600 dark:text-gray-300 mb-4">“This tool helped us launch our MVP 3x faster. The UI is simple, clean, and efficient.”</p>
-          <div class="flex items-center space-x-4">
-            <img src="https://i.pravatar.cc/100?img=1" alt="User 1" class="w-12 h-12 rounded-full">
-            <div>
-              <h4 class="text-sm font-semibold">Alex Carter</h4>
-              <span class="text-xs text-gray-500 dark:text-gray-400">Founder @ LaunchFlow</span>
-            </div>
-          </div>
-        </div>
-  
-        
-        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <p class="text-gray-600 dark:text-gray-300 mb-4">“I love the automation features. It saves me hours every week managing my team.”</p>
-          <div class="flex items-center space-x-4">
-            <img src="https://i.pravatar.cc/100?img=2" alt="User 2" class="w-12 h-12 rounded-full">
-            <div>
-              <h4 class="text-sm font-semibold">Sophie Lee</h4>
-              <span class="text-xs text-gray-500 dark:text-gray-400">Ops Manager @ RemoteStack</span>
-            </div>
-          </div>
-        </div>
-  
-        
-        <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <p class="text-gray-600 dark:text-gray-300 mb-4">“$25 for lifetime access? That’s a steal. We’ve replaced 3 tools with just this one.”</p>
-          <div class="flex items-center space-x-4">
-            <img src="https://i.pravatar.cc/100?img=3" alt="User 3" class="w-12 h-12 rounded-full">
-            <div>
-              <h4 class="text-sm font-semibold">Michael Zhang</h4>
-              <span class="text-xs text-gray-500 dark:text-gray-400">Co-founder @ ScaleHub</span>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  </section> -->
   <!-- 🧑‍💼 Testimonials Section End -->
   
   <!-- ❓ FAQ Section Start -->
@@ -600,120 +563,124 @@
         <p>&copy; <span id="current-year"></span> 2025 SaaSify. All rights reserved.</p>
         </div>
       </footer>
-      
-      <script>
-        (() => {
-          const track = document.querySelector('.carousel-track');
-          let cards = Array.from(track.children);
-          const prevBtn = document.getElementById('prevBtn');
-          const nextBtn = document.getElementById('nextBtn');
-        
-          // Clone first & last card for infinite loop
-          const cloneFirst = cards[0].cloneNode(true);
-          const cloneLast = cards[cards.length - 1].cloneNode(true);
-          track.appendChild(cloneFirst);
-          track.insertBefore(cloneLast, cards[0]);
-          cards = Array.from(track.children);
-        
-          let currentIndex = 1;
-          let isTransitioning = false;
-          let lastDirection = 'right';
-        
-          // Get width including margin
-          function cardWidth() {
-            return cards[0].offsetWidth + 16; // mx-2*2 = 16px margin horizontal
-          }
-        
-          // Calculate translateX to center current card
-          function getTranslateX() {
-            const width = cardWidth();
-            const containerWidth = track.parentElement.offsetWidth;
-            return -(width * currentIndex - (containerWidth / 2 - width / 2));
-          }
-        
-          // Update scale & opacity classes based on position and direction
-          function updateCards() {
-            const isMobile = window.innerWidth < 768;
-        
-            cards.forEach((card, i) => {
-              card.classList.remove('scale-110', 'opacity-100', 'z-10');
-              card.classList.add('scale-90', 'opacity-60');
-            });
-        
-            // Zoom center card on desktop
-            cards[currentIndex].classList.remove('scale-90', 'opacity-60');
-            cards[currentIndex].classList.add('scale-110', 'opacity-100', 'z-10');
-        
-            if (isMobile) {
-              if (lastDirection === 'right') {
-                // Zoom right card only on mobile
+
+        <script>
+          (() => {
+            const track = document.querySelector('.carousel-track');
+            let cards = Array.from(track.children);
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+          
+            // Clone first & last card for infinite loop
+            const cloneFirst = cards[0].cloneNode(true);
+            const cloneLast = cards[cards.length - 1].cloneNode(true);
+            track.appendChild(cloneFirst);
+            track.insertBefore(cloneLast, cards[0]);
+            cards = Array.from(track.children);
+          
+            let currentIndex = 1;
+            let isTransitioning = false;
+            let lastDirection = 'right';
+          
+            function cardWidth() {
+              return cards[0].offsetWidth + 16; // margin
+            }
+          
+            function getTranslateX() {
+              const width = cardWidth();
+              const containerWidth = track.parentElement.offsetWidth;
+              return -(width * currentIndex - (containerWidth / 2 - width / 2));
+            }
+          
+            function updateCards() {
+              const isMobile = window.innerWidth < 768;
+              cards.forEach((card) => {
+                card.classList.remove('scale-110', 'opacity-100', 'z-10');
+                card.classList.add('scale-90', 'opacity-60');
+              });
+          
+              if (isMobile) {
                 let rightIndex = (currentIndex + 1) % cards.length;
                 cards[rightIndex].classList.remove('scale-90', 'opacity-60');
                 cards[rightIndex].classList.add('scale-110', 'opacity-100', 'z-10');
-              } else if (lastDirection === 'left') {
-                // Zoom left card only on mobile
-                let leftIndex = (currentIndex - 1 + cards.length) % cards.length;
-                cards[leftIndex].classList.remove('scale-90', 'opacity-60');
-                cards[leftIndex].classList.add('scale-110', 'opacity-100', 'z-10');
+              } else {
+                cards[currentIndex].classList.remove('scale-90', 'opacity-60');
+                cards[currentIndex].classList.add('scale-110', 'opacity-100', 'z-10');
               }
             }
-          }
-        
-          // Move to index with transition
-          function moveToIndex(index, direction) {
-            if (isTransitioning) return;
-            isTransitioning = true;
-            lastDirection = direction;
-            currentIndex = index;
-            track.style.transition = 'transform 0.7s ease-in-out';
-            track.style.transform = `translateX(${getTranslateX()}px)`;
-            updateCards();
-          }
-        
-          // Handle infinite looping on transition end
-          track.addEventListener('transitionend', () => {
-            isTransitioning = false;
-            const lastOriginalIndex = cards.length - 2;
-        
-            if (currentIndex === 0) {
-              // If moved left past cloneLast, jump to last original
-              track.style.transition = 'none';
-              currentIndex = lastOriginalIndex;
-              track.style.transform = `translateX(${getTranslateX()}px)`;
-              updateCards();
-            } else if (currentIndex === cards.length - 1) {
-              // If moved right past cloneFirst, jump to first original
-              track.style.transition = 'none';
-              currentIndex = 1;
+          
+            function moveToIndex(index, direction) {
+              if (isTransitioning) return;
+              isTransitioning = true;
+              lastDirection = direction;
+              currentIndex = index;
+              track.style.transition = 'transform 0.7s ease-in-out';
               track.style.transform = `translateX(${getTranslateX()}px)`;
               updateCards();
             }
-          });
-        
-          // Prev and Next buttons
-          prevBtn.addEventListener('click', () => {
-            moveToIndex(currentIndex - 1, 'left');
-          });
-        
-          nextBtn.addEventListener('click', () => {
-            moveToIndex(currentIndex + 1, 'right');
-          });
-        
-          // On resize, update position & cards
-          window.addEventListener('resize', () => {
-            track.style.transition = 'none';
-            track.style.transform = `translateX(${getTranslateX()}px)`;
-            updateCards();
-          });
-        
-          // Init
-          window.onload = () => {
-            track.style.transform = `translateX(${getTranslateX()}px)`;
-            updateCards();
-          };
-        })();
-        </script>
-     
+          
+            track.addEventListener('transitionend', () => {
+              isTransitioning = false;
+              const lastOriginalIndex = cards.length - 2;
+          
+              if (currentIndex === 0) {
+                track.style.transition = 'none';
+                currentIndex = lastOriginalIndex;
+                track.style.transform = `translateX(${getTranslateX()}px)`;
+                updateCards();
+              } else if (currentIndex === cards.length - 1) {
+                track.style.transition = 'none';
+                currentIndex = 1;
+                track.style.transform = `translateX(${getTranslateX()}px)`;
+                updateCards();
+              }
+            });
+          
+            prevBtn.addEventListener('click', () => moveToIndex(currentIndex - 1, 'left'));
+            nextBtn.addEventListener('click', () => moveToIndex(currentIndex + 1, 'right'));
+          
+            window.addEventListener('resize', () => {
+              track.style.transition = 'none';
+              track.style.transform = `translateX(${getTranslateX()}px)`;
+              updateCards();
+            });
+          
+            // Touch swipe support
+            let startX = 0;
+            let isDragging = false;
+          
+            track.addEventListener('touchstart', (e) => {
+              startX = e.touches[0].clientX;
+              isDragging = true;
+            });
+          
+            track.addEventListener('touchmove', (e) => {
+              if (!isDragging) return;
+              const diff = e.touches[0].clientX - startX;
+              track.style.transition = 'none';
+              track.style.transform = `translateX(${getTranslateX() + diff}px)`;
+            });
+          
+            track.addEventListener('touchend', (e) => {
+              if (!isDragging) return;
+              isDragging = false;
+              const diff = e.changedTouches[0].clientX - startX;
+              if (diff > 50) {
+                moveToIndex(currentIndex - 1, 'left');
+              } else if (diff < -50) {
+                moveToIndex(currentIndex + 1, 'right');
+              } else {
+                track.style.transition = 'transform 0.7s ease-in-out';
+                track.style.transform = `translateX(${getTranslateX()}px)`;
+              }
+            });
+          
+            window.onload = () => {
+              track.style.transform = `translateX(${getTranslateX()}px)`;
+              updateCards();
+            };
+          })();
+          </script>
       
       <script>
         // Live Time and Year
